@@ -5,9 +5,23 @@
 
 # --- Arquivos de sistema / IDE (SSMS / VS) ---
 .vs/
-*.vsidx
-*.user
+**/.vs/
+
+# Ignorar arquivos temporários do VS Shell
 *.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.slnx
+*.sqlite
+*.tmp
+*.cache
+*.log
+
+# Arquivos internos de estado do VS/SSMS
+*.sqlite
+*.db
+VSWorkspaceState.json
 
 # --- Arquivos temporários genéricos ---
 *.tmp
@@ -40,3 +54,4 @@ dump/
 !.md
 !LICENSE
 !README.md
+/.vs/VSWorkspaceState.json
